@@ -117,30 +117,25 @@ h1, h2, h3 {
 
 /* sobre nosotros*/
 .about-us {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* column-gap: 2rem; */
-}
-
-.about-us img {
-  background-image: url('../img/nosotros.jpg');
-  background-position: center center;
+  background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0), url(../img/nosotros.jpg);
+  background-position: left center;
+  padding: 10rem 0;
   background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
-  width: 100%;
-  height: 24rem;
-}
-.about-us div {
-  background-color: #037bc0;
-  color: white;
-  padding: 1.6rem .8rem;
+  background-size: 100%, 100rem;
+  margin-top: 2.4rem;
 }
 
-.about-us div p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+.about-us-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8rem;
+}
+.text-about-us {
+  grid-column: 2 / 3;
+  color: white;
+}
+.text-about-us p {
+  line-height: 1.8;
 }
 
 /* */
