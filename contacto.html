@@ -36,12 +36,12 @@
   <main class="contenido-principal contenedor">
     <h2 class="text-center">contacto</h2>
 
-    <form action="">
+    <form action="" class="formulario">
       <fieldset>
-        <legend>Tus datos</legend>
+        <legend class="text-center">Tus datos</legend>
         <div class="campo">
           <label for="nombre">Nombre: </label>
-          <input type="text" id="nombre" placeholder="coloca tu nombre"/>
+          <input type="text" id="nombre" placeholder="coloca tu nombre" class="input"/>
         </div>
         <div class="campo">
           <label for="asunto">Asunto:</label>
@@ -77,8 +77,31 @@
         </div>
       </fieldset>
       <fieldset>
-        <legend>Datos extras</legend>
+        <legend>Información extra</legend>
+
+        <div class="campo">
+          <label for="cliente">Cliente</label>
+          <input type="radio" id="cliente" name="tipo" value="cliente">
+        </div>
+        
+        <div class="campo">
+          <label for="proveedor">proveedor</label>
+          <input type="radio" id="proveedor" name="tipo" value="proveedor">
+        </div>
+
+        <div class="campo">
+          <label for="categoria">categoria de interes</label>
+          <input list="categorias" name="categorias">
+          <datalist id="categorias">
+            <option value="Cosina">
+            <option value="Exterior">
+            <option value="Recamara">
+            <option value="Televisión">
+          </datalist>
+        </div>
+        <input type="submit" class="btn" value="enviar formulario">
       </fieldset>
+
     </form>
 
   </main>
